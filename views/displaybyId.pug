@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	h1= 'Welcome to ORM Middleware'
+	a.btn.btn-default(href='/') Home
+	h5= 'Displaying Results'
+	table.table.table-bordered.table-striped
+		th= 'ID'
+		th= 'First Name'
+		th= 'Last Name'
+		each result in results
+			tr
+				td= result.id
+				td= result.firstname
+				td= result.lastname
