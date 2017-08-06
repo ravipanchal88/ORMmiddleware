@@ -20,7 +20,6 @@ router.get('/displayAll', function(req, res,next) {
 
 //Get by iD  Function 
 router.get('/displaybyId', function(req, res,next) {
-	console.log('Ilovepanties');
 	Seq.initialize();
 	Seq.findByID('1').then(function(result){
 		res.render('displaybyId',{
